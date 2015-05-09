@@ -1,0 +1,25 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" 
+      xmlns:scalinglabel="scalinglabel" 
+      loaded="pageLoaded">
+
+    <StackLayout>
+        <StackLayout cssClass="group">
+            <Label text="Text Input" />
+            <Border borderWidth="1" borderColor="#aaaaaa" cssClass="textFieldContainer">
+                <TextField text="{{ message }}" cssClass="text textfield" />
+            </Border>
+        </StackLayout>
+
+        <StackLayout cssClass="group">
+            <Label text="Label" />
+            <Label text="{{ message }}" cssClass="text message" textWrap="false" />
+        </StackLayout>
+
+        <StackLayout cssClass="group">
+            <Label text="Scaling Label" />
+            <scalinglabel:ScalingLabel text="{{ message }}" cssClass="text message" textWrap="true" />
+        </StackLayout>
+
+    </StackLayout>
+
+</Page>
